@@ -10,6 +10,10 @@ export default createGlobalStyle`
 
   :root{
     font-size: 62.5%;
+
+    @media(max-width: ${DEVICE_BREAKPOINTS.SM}){
+      font-size: 50%;
+    }
   }
 
   body {
