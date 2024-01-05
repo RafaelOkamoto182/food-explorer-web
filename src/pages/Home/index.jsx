@@ -1,13 +1,14 @@
 
 import { Container } from "./styles";
-import { Button } from "../../components/Button";
-import { X } from '@phosphor-icons/react'
+import { FileMagnifyingGlass } from '@phosphor-icons/react'
+import { Input } from '../../components/Input';
+
 
 export function Home() {
 
   return (
     <Container>
-      <Button title={"incluir"} icon={X} />
+      <Input placeholder={"Search for dishes or ingredients"} icon={FileMagnifyingGlass} />
     </Container>
   );
 }
