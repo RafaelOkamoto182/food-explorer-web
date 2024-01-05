@@ -6,7 +6,7 @@ export function Home() {
 
   return (
     <Container>
-      <Button title={"Pedir"} />
+      <Button title={"incluir"} />
     </Container>
   );
 }
