@@ -9,10 +9,10 @@ export default createGlobalStyle`
   }
 
   :root{
-    font-size: 16px;
+    font-size: 10px;
 
     @media (max-width: ${DEVICE_BREAKPOINTS.MD}) {
-      font-size: 12px
+      font-size: 8px
     }
   }
 
@@ -25,7 +25,7 @@ export default createGlobalStyle`
 
   body, input, button, textarea {
     font-family: 'Roboto', sans-serif;
-    font-size: 1rem;
+    font-size: 1.6rem;
     outline: none;
   }
 
@@ -43,7 +43,7 @@ export default createGlobalStyle`
   }
 
   ::-webkit-scrollbar {
-    width: .5rem;
+    width: .8rem;
   }
   
   ::-webkit-scrollbar-track {
