@@ -1,17 +1,24 @@
-import { Plus, List } from "@phosphor-icons/react";
+import { Plus, List, Receipt, ShoppingCart } from "@phosphor-icons/react";
 
-import { Button } from "../Button";
+import headerBranding from '../../assets/header-branding.svg'
 
-import { Container, Menu } from "./styles";
 
-export function Header({ onOpenMenu }) {
+import { Container, HeaderContent, Menu, Orders } from "./styles";
+
+export function Header() {
   return (
-    <Container>
-      <Menu onClick={onOpenMenu}>
-        <List />
-      </Menu>
-      <h1>Tarefas</h1>
-      <Button icon={Plus} title="Nova tarefa" />
+    <Container >
+      <HeaderContent>
+        <Menu>
+          <List />
+        </Menu>
+
+        <img src={headerBranding} alt="Food explorer logo" />
+
+        <Orders>
+          <Receipt />
+        </Orders>
+      </HeaderContent>
     </Container>
   );
 }

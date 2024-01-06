@@ -2,32 +2,42 @@ import styled from "styled-components";
 import { DEVICE_BREAKPOINTS } from '../../styles/deviceBreakPoints'
 
 export const Container = styled.header`
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin: 0 24px;
-  padding: 16px 0;
+  background-color: ${({ theme }) => theme.COLORS.DARK_700};
+  color: ${({ theme }) => theme.COLORS.LIGHT_100};
+  
+  height:11.1rem;
 
-  border-bottom-width: 1px;
-  border-bottom-style: solid;
-  border-bottom-color: ${({ theme }) => theme.COLORS.GRAY_500};
-
-  > h1 {
-    font-size: 2rem;
-  }
+  padding: 5.6rem 2.8rem 2.4rem
 `;
+
+export const HeaderContent = styled.div`
+display: flex;
+align-items: center;
+justify-content: space-between;
+
+>img{
+  width: 16rem;
+}
+
+`
 
 export const Menu = styled.button`
   background: none;
   border: none;
-  display: none;
 
   >svg{
     font-size: 2.5rem;
-    color: ${({ theme }) => theme.COLORS.BLUE_200}
-  }
-
-  @media (max-width: ${DEVICE_BREAKPOINTS.MD}){
-    display: block;
+    color: ${({ theme }) => theme.COLORS.LIGHT_100}
   }
 `;
+
+export const Orders = styled.button`
+  background: none;
+  border: none;
+
+  >svg{
+    font-size:2.5rem;
+    color: ${({ theme }) => theme.COLORS.LIGHT_100}
+  }
+
+`
