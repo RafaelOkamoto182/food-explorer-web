@@ -6,6 +6,7 @@ import { Footer } from "../../components/Footer";
 import { Header } from '../../components/Header'
 import { IngredientTag } from "../../components/IngredientTag"
 import { IngredientInput } from "../../components/IngredientInput"
+import { QtySelector } from "../../components/QtySelector";
 
 
 
@@ -13,19 +14,7 @@ export function Home() {
 
   return (
     <Container>
-      <IngredientInput
-        isnew={false}
-        value={"Bread"}
-        onChange={() => { }}
-        onClick={() => { }}
-      />
-      <IngredientInput
-        isnew={true}
-        value={""}
-        placeholder={"Add"}
-        onChange={() => { }}
-        onClick={() => { }}
-      />
+      <QtySelector />
     </Container>
   );
 }

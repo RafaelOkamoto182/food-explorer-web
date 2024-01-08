@@ -12,7 +12,7 @@ export default createGlobalStyle`
     font-size: 62.5%;
 
     @media(max-width: ${DEVICE_BREAKPOINTS.SM}){
-      font-size: 50%;
+      font-size: 58%;
     }
   }
 
