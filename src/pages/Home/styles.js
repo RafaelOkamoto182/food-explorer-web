@@ -8,3 +8,9 @@ export const Container = styled.div`
   background-color: ${({ theme }) => theme.COLORS.DARK_800};
 
 `;
+
+export const CardContainer = styled.div`
+  width: 30rem;
+  height: 46rem;
+
+`

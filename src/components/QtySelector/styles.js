@@ -9,13 +9,14 @@ gap: 1.6rem;
 
 @media(min-width: ${DEVICE_BREAKPOINTS.MD}){
       flex-direction: row;
+      justify-content: center;
     }
 `;
 
 export const StepperContainer = styled.div`
-display:flex;
+display: flex;
 align-items: center;
-height:3.2rem;
+
 
 >div{
     color: ${({ theme }) => theme.COLORS.LIGHT_300};
@@ -33,6 +34,8 @@ export const QuantityButton = styled.button`
 
   cursor: pointer;
   font-size: 25px;
+
+  height:3.2rem;
 `;
 
 export const QuantityDisplay = styled.div`
