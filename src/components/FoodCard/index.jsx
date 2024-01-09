@@ -12,10 +12,10 @@ export function FoodCard({ foodData }) {
                 onClick={() => { }}
                 weight={isfavorite ? 'fill' : 'regular'}
             />
-            <FoodImage src={foodImage} alt={name} />
+            <FoodImage src={foodImage} alt={name} onClick={() => console.log("go to another page")} />
 
             <FoodContent>
-                <FoodName>{name}</FoodName>
+                <FoodName onClick={() => console.log("go to another page")}>{name}</FoodName>
                 <FoodDescription>{description}</FoodDescription>
                 <FoodPrice>${price.toFixed(2)}</FoodPrice>
                 <QtySelector />
