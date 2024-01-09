@@ -43,6 +43,10 @@ export const FoodName = styled.h3`
   margin: 0;
   text-align: center;
   margin-bottom: 1.2rem;
+
+  @media(min-width: ${DEVICE_BREAKPOINTS.MD}){
+        margin-bottom: 1.5rem;
+    }
 `;
 
 export const FoodDescription = styled.p`
@@ -56,6 +60,12 @@ export const FoodDescription = styled.p`
         font-family: 'Roboto', sans-serif;
         
         margin-bottom: 1.5rem;
+
+        height: 8.5rem;
+
+        overflow-x: hidden;
+        text-overflow: ellipsis;
+
     }
 
 `
@@ -64,6 +74,10 @@ export const FoodPrice = styled.p`
   color: ${({ theme }) => theme.COLORS.CAKE_200};
   text-align: center;
   margin-bottom: 1.2rem;
+
+  @media(min-width: ${DEVICE_BREAKPOINTS.MD}){
+        margin-bottom: 1.5rem;
+    }
 `;
 
 export const FavoriteIcon = styled(Heart)`
