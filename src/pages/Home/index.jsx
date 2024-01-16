@@ -1,7 +1,8 @@
 
-import { CardContainer, Container } from "./styles";
+import { Section } from "../../components/Section";
+import { Container } from "./styles";
+import { FoodCard } from "../../components/FoodCard"
 
-import { FoodCard } from "../../components/FoodCard";
 
 export function Home() {
 
